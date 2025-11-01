@@ -1,0 +1,21 @@
+body{
+  background-color: #FBDEDA;
+    color: #333;
+}
+
+.navbar {
+  background-color: #7A5252 !important;
+}
+.navbar a {
+  color: white;
+  padding: 10px;
+}
+.navbar a:hover {
+  color: #FBDEDA;
+}
+.navbar .nav-link.active {
+  color: white;
+}
+.navbar a {
+  font-size: 20px;
+}
