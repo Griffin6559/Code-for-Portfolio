@@ -1,0 +1,121 @@
+.tutorial {
+    p, h1 {
+        margin-left:100px;
+    }
+    background-color:#F7C8BE;
+
+    .accordion-button {
+        background-color:#7192BE;
+        }
+
+        nav {
+            background-color:#A6C48A;
+            border: 4px solid #7192BE;
+                border-radius: 10px;
+        }
+
+        img {
+            border:4px solid #A6C48A;
+                border-radius:20px;
+        }
+    }
+
+    .amigurumi {
+        p, h1,h2,h6,h4 {
+            color:#1C3144;
+            text-align:center;
+        }
+        background-color:#FFFCDE;
+
+            nav {
+                background-color:#F7B32B;
+                border: 4px solid #7BA5DF;
+                    border-radius: 10px;
+            }
+
+            img {
+                border:4px solid #A6C48A;
+                    border-radius:20px;
+
+            }
+            }
+
+
+    .clothing {
+        p,h1,h2,h6,h4 {
+            color:#52425F;
+            text-align:center;
+        }
+        background-color:#E7F4F1;
+
+            nav {
+                background-color:#655A7C;
+                border: 4px solid #E88D67;
+                    border-radius: 10px;
+            }
+
+            img {
+                border:4px solid #E88D67;
+                    border-radius:20px;
+
+            }
+            }
+
+            .my_projects {
+                p, h1,h2,h6,h4 {
+                    text-align:center;
+                }
+                background-color:#EBC399;
+
+                    nav {
+                        background-color:#885053;
+                        border: 4px solid #DC965A;
+                            border-radius: 10px;
+                    }
+
+                    img {
+                        border:4px solid #6093B0;
+                            border-radius:20px;
+
+                    }
+                    }
+
+.home {
+    background-color:#D89A9E;
+
+    p,h1 {
+        color:#513541;
+    }
+
+    nav {
+        background-color:#846267;
+        border: 4px solid #BDEBD4;
+            border-radius: 10px;
+
+    }
+
+    img {
+        border:4px solid #74984C;
+            border-radius:20px;
+
+        }
+
+    .btn {
+        background-color:#74984C;
+    }
+}
+
+* {
+    color:#1E1E24;
+}
+
+#color {
+    color:#678D58;
+}
+#color1 {
+    color:#678D58;
+}
+
+#color2 {
+    color:#678D58;
+}

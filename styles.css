@@ -1,0 +1,71 @@
+.navbar {
+ background-color: #7A5252 !important;
+}
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    overflow:hidden;
+    color:#00457E;
+
+}
+
+.drawing-board {
+  position: relative;
+  display: inline-block;
+  width: 1400px;
+  height: 700px;
+}
+
+.drawing-board {
+  position: relative;
+  width: 1400px;
+  height: 700px;
+  display: block;
+}
+
+#drawing-board {
+  border: 2px solid #ccc;
+  display: block;
+  image-rendering: pixelated;
+}
+
+#guide.hidden {
+  display: none !important;
+}
+#guide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 100%;
+  background: black;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+
+#guide div {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  gap: 0;
+}
+
+#toolbar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 130px;
+  height: 700px;
+  background-color: #202020;
+  border-right: 2px solid #ccc;
+  box-sizing: border-box;
+}
