@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>You crawl through the tunnel, it is tight, but just wide enough to move along. After a long time of moving, you find yourself at a dead end, no, the back of a painting. <br>
+   You push the painting off the wall and walk out into a large room with a pair of chairs to your left. A purple carpet runs the length of the rectangular room, up the steps to the chairs. The thrones. <br>
+This isn't just the castle of some noble, this is a throne room, a palace for royalty.</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('crawl')}}" method = "post">
+        <p><b>What action do you take?</b></p>
+        <input type="radio" name="throne_room" value="sit">Sit on one of the thrones<br/>
+        <input type="radio" name="throne_room" value="walk_out">Walk out the door on the far end of the room<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br> <b>Items you carry: </b>Sword, bag
+        <br> <b>Thoughts: </b>Shades, paintings, and now royalty, I might be in a bit over my head...
+    </p>
+    </div>
+
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+

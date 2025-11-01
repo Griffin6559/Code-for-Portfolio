@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<style>
+    body {
+        background: linear-gradient(0deg, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), url("https://en.idei.club/uploads/posts/2023-08/thumbs/1691112464_en-idei-club-p-medieval-castle-throne-room-dizain-vkontak-29.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;    }
+</style>
+<body>
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+    <div class="row">
+        <p>You leave the room through the large double doors, and after a series of hallways, you finally open a door to sunlight. You made it back outside.<br>
+            You begin your journey home. The king can send a paladin. Now that you have completed your mission, maybe he will even award you a title. Baron/Baroness <p2>{{name}} </p2>has a nice ring to it.</p>
+    </div>
+
+
+    <div class="row">
+        <form action="{{ url_for('return_killer_paints')}}" method = "post">
+            <input type="hidden" name="name" value="{{name}}">
+            <input type="hidden" name="paints" value="{{paints}}">
+            <button><a href="https://cautious-umbrella-wrqv5pjgqwj3v6q9-5000.app.github.dev/">Play Again</a></button>
+        </form>
+    </div>
+
+        <div class ="row">
+        <p>
+            <br>
+            <br> <b>Items you carry: </b>Sword, bag, {{paints}}
+            <br> <b>Thoughts:</b> I understand now that the prince unintentionally cursed his family by turning them into shades. A paladin should be able to fix this...
+        </p>
+        </div>
+
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </div>
+</body>
+
+
+{% endblock %}
+
+

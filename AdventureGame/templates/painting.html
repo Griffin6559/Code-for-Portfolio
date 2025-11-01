@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>The painting is a portrait of a young boy, no older than seven. His clothes tell you that he was part of the nobility, around his neck he wears a medallion with a crest unfamiliar to you. <br>
+    You are so engrossed in the brush strokes, that it takes you a moment to see the color seep out of the painting and into a dark figure who walks out to stand on the ground in front of the framed painting. <br>
+<br> The shadowed figure stands only about four feet tall.</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('painting')}}" method = "post">
+    <p><b>What do you do?</b></p>
+        <input type="radio" name="shade" value="unsheath">Unsheath your sword<br/>
+        <input type="radio" name="shade" value="talker">talk to him, he's just a kid<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+
+    <div class ="row">
+    <p>
+        <br>
+        <br><b> Items you carry: </b>Sword, bag
+        <br> <b>Thoughts:</b> Why is there a Shade here?
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+

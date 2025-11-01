@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<style>
+    body {
+        background: linear-gradient(0deg, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), url("https://cdnb.artstation.com/p/assets/images/images/002/848/751/large/luke-wilkins-12282029-924685084276477-1780070521-o.jpg?1521332723");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;    }
+</style>
+<body>
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+    <div class="row">
+        <p>You take out one of the old pigment cans from your bag, and realizing what you have, the little Shade holds his hands out to you. In them he holds a bowl of water and a paint brush. Realization of what he wants comes over you. <br>
+        You take the paint brush and the bowl of water, one swipe of color draws across the shadow, filling it in with the brilliant hues of {{paints}}. Soon, the boy is no longer a Shade, but a human-like figure standing in front of you.<br>
+    He might be missing a few colors, but he was alive, no longer a Shade.
+    <br>
+    <br> "Thank you," he smiled. You nodded in response. He pointed you in the direction of the castle's exit, and ran off to the art room to bring color back to his family. You can go home now, knowing you completed your mission. <br>
+    Maybe it's time to change loyalty to a new royal family, Baron/Baroness<p1> {{name}}</p1> has a nice ring to it...</p>
+    </div>
+
+
+    <div class="row">
+        <form action="{{ url_for('paint_paints')}}" method = "post">
+            <input type="hidden" name="name" value="{{name}}">
+            <input type="hidden" name="paints" value="{{paints}}">
+            <button><a href="https://cautious-umbrella-wrqv5pjgqwj3v6q9-5000.app.github.dev/">Play Again</a></button>
+        </form>
+    </div>
+
+        <div class ="row">
+        <p>
+            <br>
+            <br><b> Items you carry:</b> Sword, bag
+            <br> <b>Thoughts: </b>I have helped the Shades return to being human, but I might hold off on giving this land to my king...
+        </p>
+        </div>
+
+
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </div>
+</body>
+
+{% endblock %}
+
+

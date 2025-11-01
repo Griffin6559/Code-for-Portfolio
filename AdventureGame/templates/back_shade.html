@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<div class="row">
+    <p>You go back over to the boy, you are ready to follow him now. He pushes aside his portrait, revealing a tunnel. He crawls in first, and you follow.</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('back_shade')}}" method = "post">
+        <p><b>No way but forward</b></p>
+        <input type="radio" name="onwards" value="onwards">Keep crawling<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <input type="hidden" name="paints" value="{{paints}}">
+        <input type="hidden" name="paint" value="{{paint}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br> <b>Items you carry: </b>Sword, bag, {{paints}}
+        <br> <b>Thoughts: </b>I have lots of paint, this Shade seems important. Well, onwards...
+    </p>
+    </div>
+
+
+{% endblock %}
+
+

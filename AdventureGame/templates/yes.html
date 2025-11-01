@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>You take the hand of the little Shade, although it feels as though you are holding nothing. He pushes the painting so it tilts crooked, revealing a tunnel behind it, and motions to crawl through. </p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('yes')}}" method = "post">
+    <p><b>Do you crawl through the tunnel, or consider something else?</b></p>
+        <input type="radio" name="friendly" value="crawl2">Crawl through the tunnel<br/>
+        <input type="radio" name="friendly" value="brush">Pick up a paint brush<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br><b> Items you carry: </b>Sword, bag
+        <br> <b>Thoughts: </b>This tunnel might take me somewhere important...
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>You unsheath your sword and cut down the boy. Shades are monsters after all, aren't they? <br>
+   Something feels wrong. The room feels so much more off now. You look over at the painting, a large slash now tears it in half, as if sliced by a sword. <br>
+behind the painting it is empty, a hidden passage. </p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('unsheath_painting')}}" method = "post">
+    <p><b>Do you crawl through, or do something else?</b></p>
+        <input type="radio" name="killer_unsheath" value="crawl3">Crawl through<br/>
+        <input type="radio" name="killer_unsheath" value="brush1">Pick up a paint brush<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <input type="hidden" name="paints" value="{{paints}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+<div class ="row">
+<p>
+    <br>
+    <br> <b>Items you carry:</b> Sword, bag, {{paints}}
+    <br> <b>Thoughts: </b>The boy seemed important, or maybe just his painting?
+</p>
+</div>
+
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+{% endblock %}
+
+

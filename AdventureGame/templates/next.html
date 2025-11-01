@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>With the new pigments in your bag, there are only a few more things you can still do in the room.</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('next')}}" method = "post">
+    <p><b>What do you choose to do?</b></p>
+        <input type="radio" name="next" value="brush">Pick up a paint brush<br/>
+        <input type="radio" name="next" value="painting_paints">Look at the painting<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <input type="hidden" name="paints" value="{{paints}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br> <b>Items you carry:</b> Sword, bag, {{paints}}
+        <br> <b>Thoughts: </b>I have lots of paint now...
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+

@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<style>
+    body {
+        background: linear-gradient(0deg, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), url("https://cdn.openart.ai/stable_diffusion/90e34f18ff9d8ab05afd5482b5b7b883373fb935_2000x2000.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;    }
+</style>
+<body>
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+    <div class="row">
+        <p>You push open the doors to a corridor. You walk down corridor after corridor, until you reach a large set of doors. You push them open and are blinded by light. Sunlight. <br>
+        You made it outside. Finally, you can go home. You never found out the mystery of the castle, but oh well, there are other knights they can send.  </p>
+    </div>
+
+
+    <div class="row">
+        <form action="{{ url_for('walk_out')}}" method = "post">
+            <input type="hidden" name="name" value="{{name}}">
+            <input type="hidden" name="paints" value="{{paints}}">
+            <button><a href="https://cautious-umbrella-wrqv5pjgqwj3v6q9-5000.app.github.dev/">Play Again</a></button>
+        </form>
+    </div>
+
+        <div class ="row">
+        <p>
+            <br>
+            <br> <b>Items you carry: </b>Sword, bag, {{paints}}
+            <br> <b>Thoughts: </b>I didn't really find out what was going on, but at least I made it out.
+        </p>
+        </div>
+
+
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </div>
+</body>
+
+
+{% endblock %}
+
+

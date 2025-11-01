@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="row">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+<div class="row">
+    <p>You are a knight who has worked your way up the ranks until you finally got the honor of being sent on a mission directly by the king himself.
+        <br>
+        <br>[mission: discover what curse is on the abandoned castle and why no one returns]
+        <br>
+    <br>It was such an honor, until the king had the mages prematurely teleport you directly into the middle of the castle before you could grab much more than your bag.
+<br>You must complete your mission and escape, before you too, become someone who never returns.</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('index')}}" method = "post">
+        <p><b>What is your name?</b></p>
+        <input type="text" name="name"><br/>
+        <p>The only way out of the room is an oak door ahead of you, so that is the way you must go.</p>
+        <input type="radio" name="door" value="oak">Oak door.<br/>
+
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br> <b>Items you carry:</b> Sword, bag
+        <br> <b>Thoughts:</b> here to solve a mystery
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}

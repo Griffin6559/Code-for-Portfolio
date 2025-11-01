@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>You sit down on the left throne, your vision blurs and you are no longer seeing a throne room from the eyes of a knight, but the eyes of a ruler.<br>
+    You remember your family getting their portraits done, you remember making decisions, heading wars, leading a kingdom. You shake your head, theses are not your memories, but the king of this castle's. <br>
+More memories flood into your head, you remember your oldest son becoming an artist, painting portraits. You remember his dying wish after returning from the battlefield, "Please live on for as longs as I couldn't,"<br>
+<br>
+You jump off the throne. The crown prince of the kingdom had been gifted with magic. Unknowingly, his words had trapped his family's spirits in their portraits, 'immortalizing' them in a way.</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('sit_killer')}}" method = "post">
+    <p><b>What do you plan to do?</b></p>
+        <input type="radio" name="decision_killer" value="return_killer">Return home and bring a paladin, they could free the souls<br/>
+        <input type="radio" name="decision_killer" value="cut">Cut down all the Shades<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br> <b>Items you carry:</b> Sword, bag
+        <br> <b>Thoughts: </b>I understand now that the prince unintentionally cursed his family by turning them into shades.
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+

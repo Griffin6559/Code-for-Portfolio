@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>With the new pigments in your bag, the only way out of the room is the painting.</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('next_killer')}}" method = "post">
+    <p><b>I can only go forwards...</b></p>
+        <input type="radio" name="next_killer" value="through">Crawl through the tunnel<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br><b> Items you carry:</b> Sword, bag
+        <br> <b>Thoughts: </b>I have lots of paint now, the Shade might have been important
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>You crawl through the tunnel behind the Shade, it is tight, but just wide enough to move along, but easy for the young boy. After a long time of moving, the boy stops to break the wall in front of him, no, push aside a painting. <br>
+        He pushes the painting off the wall and you both walk out into a large room with a pair of chairs to your left. A purple carpet runs the length of the rectangular room, up the steps to the chairs. The thrones. <br>
+     This isn't just the castle of some noble, this is a throne room, a palace for royalty.
+    <br>
+<br> The boy grabs your hand once more and leads you to one of the thrones, he motions for you to sit on it.</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('crawl2_paints')}}" method = "post">
+        <p><b>Do you sit?</b></p>
+        <input type="radio" name="throne_room_friendly_paints" value="sit_friendly_paints">Yes, I sit down<br/>
+        <input type="radio" name="throne_room_friendly_paints" value="walk_out_paints">No, I walk out the door on the far end of the room<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <input type="hidden" name="paints" value="{{paints}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br> <b>Items you carry: </b>Sword, bag, {{paints}}
+        <br><b> Thoughts: </b>Paint is involved, maybe?
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+

@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>Many of the labels on the bottles are worn away, but you can see that they were once a wide variety of paints. <br>
+    You unscrew the cap of a bottle to find blue powder, remenants of a once-cobalt paint. If you add water, you might be able to paint with it again.<br>
+<br>It might be a good idea to take some of the bottles with you</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('pigment')}}" method = "post">
+    <p><b>Which bottles would you like to bring with you?</b></p>
+        <input type="checkbox" name="paints" value="cobalt blue pigment">cobalt blue<br/>
+        <input type="checkbox" name="paints" value="amber orange pigment">amber orange<br/>
+        <input type="checkbox" name="paints" value="obsidian black pigment">obsidian black<br/>
+        <input type="checkbox" name="paints" value="ruby red pigment">ruby red<br/>
+        <input type="checkbox" name="paints" value="eggshell white pigment">eggshell white<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br><b> Items you carry: </b>Sword, bag
+        <br> <b>Thoughts:</b> I think the paint might be important?
+    </p>
+    </div>
+
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+
+

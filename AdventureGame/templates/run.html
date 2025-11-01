@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>You sprint down the hallway, the corridor crumbling in your wake. You make it to the end, a wooden door, and quickly go through. <br>
+    If you had waited any longer, you would have been crushed.<br>
+    <br>
+    You find yourself in a small room. There is a painting of a family, and many shelves. <br>
+     The shelves are filled with bottles of long-dried pigment, and on the opposite side sits a singular blank canvas and chair.</p>
+</div>
+
+<div class="row">
+    <form action="{{ url_for('run')}}" method = "post">
+    <p><b>What do you do?</b></p>
+        <input type="radio" name="art" value="brush">Pick up a paint brush<br/>
+        <input type="radio" name="art" value="pigment">Investigate the pigment<br/>
+        <input type="radio" name="art" value="painting">Look at the painting<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+
+<div class ="row">
+    <p>
+        <br>
+        <br><b> Items you carry:</b> Sword, bag
+        <br> <b>Thoughts:</b> I wonder if this room mean anything?
+    </p>
+ </div>
+
+
+ <div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<style>
+    body {
+        background: linear-gradient(0deg, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), url("https://t4.ftcdn.net/jpg/08/38/98/69/360_F_838986976_iyEZlcri53lmVWQqyUjoIqwTzayXvX5H.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+<body>
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+    <div class="row">
+        <p>You pick up the paint brush and sit down in the old wooden chair, surprisingly it holds your weight.
+             Something draws you to the blank, white canvas, so you put the fabric and draw a line. Even though there is no paint, a line of maroon appears.<br>
+            Each stroke of your brush creates color on the canvas, until you paint a picture. You take another canvas and create a new painting, and then another, and another..... and another........and another............... and another<br>
+            ................................... and another......................................................... and ........................................................................................................................................................................................................... </p>
+    </div>
+
+
+    <div class="row">
+        <form action="{{ url_for('brush')}}" method = "post">
+            <input type="hidden" name="name" value="{{name}}">
+            <input type="hidden" name="paints" value="{{paints}}">
+            <button><a href="https://cautious-umbrella-wrqv5pjgqwj3v6q9-5000.app.github.dev/">Play Again</a></button>
+        </form>
+    </div>
+
+        <div class ="row">
+        <p>
+            <br>
+            <br> <b>Items you carry: </b>Sword, bag, {{paints}}
+            <br> <b>Thoughts: </b>................
+        </p>
+        </div>
+
+
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </div>
+</body>
+
+{% endblock %}
+
+

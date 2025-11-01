@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>You walk through the oak door and find yourself in a dark corridor. The walls are crumbling, you are worried that the ceiling might cave in. <br></p>
+</div>
+
+<div class="row">
+    <form action="{{ url_for('oak')}}" method = "post">
+    <p><b>Do you run to get to the other end, or walk to not make any tremors?</b></p>
+        <input type="radio" name="route" value="run">Run<br/>
+        <input type="radio" name="route" value="walk">Walk<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br> <b>Items you carry:</b> Sword, bag
+        <br> <b>Thoughts: </b>Weird hallway, not sure of anything yet.
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}

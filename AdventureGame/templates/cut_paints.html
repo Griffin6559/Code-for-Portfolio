@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<style>
+    body {
+        background: linear-gradient(0deg, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), url("https://sjc1.vultrobjects.com/cucdn/gallery-26/art/clos2-interior-concept.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;    }
+</style>
+<body>
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+    <div class="row">
+        <p>You have made up your mind. You travel around the castle and destroy each painting, until the halls are void of art and only filled with torn canvas and the wisps of shadows.<br>
+        You can return home as a hero and hand over the land to the king. <p2>{{name}}</p2> will be a name heard throughout the kingdom. </p>
+    </div>
+
+
+    <div class="row">
+        <form action="{{ url_for('cut_paints')}}" method = "post">
+            <input type="hidden" name="name" value="{{name}}">
+            <input type="hidden" name="paints" value="{{paints}}">
+            <button><a href="https://cautious-umbrella-wrqv5pjgqwj3v6q9-5000.app.github.dev/">Play Again</a></button>
+        </form>
+    </div>
+
+        <div class ="row">
+        <p>
+            <br>
+            <br> <b>Items you carry: </b>Sword, bag, {{paints}}
+            <br> <b>Thoughts: </b>The best course of action was just to end them, now I can return home a hero...
+        </p>
+        </div>
+    <div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+</body>
+
+
+{% endblock %}
+
+

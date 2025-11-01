@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>You don't take the Shade's hand. You take a step backwards.</p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('no')}}" method = "post">
+    <p><b>What do you choose to do?</b></p>
+        <input type="radio" name="come_on" value="brush">Pick up a paint brush<br/>
+        <input type="radio" name="come_on" value="unsheath">Unsheath your sword<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+    <div class ="row">
+    <p>
+        <br>
+        <br><b> Items you carry:</b> Sword, bag
+        <br> <b>Thoughts:</b> I feel like this Shade is involved, but what does he have to do with the painting?
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+

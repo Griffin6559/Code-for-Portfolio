@@ -1,0 +1,24 @@
+body {
+    background-color: #102225;
+
+    p,form {
+        color: #9ECECE;
+        font-size:17px;
+        text-align:center
+    }
+
+    b {
+        color: #D65108;
+    }
+
+    p1 {
+        color:#EFA00B;
+    }
+
+    p2 {
+        color:#93130A;
+    }
+
+
+}
+

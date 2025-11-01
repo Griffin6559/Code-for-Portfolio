@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+<div class="row">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+<div class="row">
+    <p>"Hello, what is your name?" You ask the small figure, he doesn't respond, but doesn't attack you either.<br>
+    The Shade reaches his hand up to you. </p>
+</div>
+
+
+<div class="row">
+    <form action="{{ url_for('talker')}}" method = "post">
+    <p><b>Do you take his hand?</b></p>
+        <input type="radio" name="hand" value="yes">Yes<br/>
+        <input type="radio" name="hand" value="no">No<br/>
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit">Choose</button>
+    </form>
+</div>
+
+
+    <div class ="row">
+    <p>
+        <br>
+        <br><b> Items you carry: </b>Sword, bag
+        <br> <b>Thoughts:</b> I feel like this Shade is involved.
+    </p>
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+{% endblock %}
+
+

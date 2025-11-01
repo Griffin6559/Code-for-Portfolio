@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<style>
+    body {
+        background: linear-gradient(0deg, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)), url("https://cdn.openart.ai/stable_diffusion/ecc684622525a126c217e39d918626869804385e_2000x2000.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;    }
+</style>
+<body>
+    <div class="row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+    <div class="row">
+        <p>You leave the room through the large double doors, and after a series of hallways, you finally open a door to sunlight. You made it back outside. You begin your journey home. <br>
+            You have taken the oaths of a knight, so the king will believe your words. Even if it is a lie, it is one that you, <p1>{{name}}</p1>, believe is honorable.</p>
+    </div>
+
+
+    <div class="row">
+        <form action="{{ url_for('return_paints')}}" method = "post">
+            <input type="hidden" name="name" value="{{name}}">
+            <input type="hidden" name="paints" value="{{paints}}">
+            <button><a href="https://cautious-umbrella-wrqv5pjgqwj3v6q9-5000.app.github.dev/">Play Again</a></button>
+        </form>
+    </div>
+
+        <div class ="row">
+        <p>
+            <br>
+            <br> <b>Items you carry: </b>Sword, bag, {{paints}}
+            <br> <b>Thoughts:</b> I will let this family live in peace, even if it is only until they fade with time...
+        </p>
+        </div>
+
+        <div class="row">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </div>
+
+</body>
+
+
+{% endblock %}
+
+
